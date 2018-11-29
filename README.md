@@ -12,7 +12,7 @@ To make use of the class functionality, construct an instance of class `PrettyAx
 
 The constructor accepts 0 to 3 arguments. If one argument is supplied, it is assumed to be the origin of the coordinate system. If two arguments are supplied, they are assumed to be the minimum and maximum point of whatever data set is being plotted. If three arguments are supplied, they are assumed to be the minimum, maximum, and origin, in that order. If no arguments are supplied, the origin is set to zero. Special behavior occurs in the `draw()` method when the minimum and maximum are not supplied.
 
-### `draw()`
+### Method `draw()`
 
 If the minimum and maximum are not supplied in the constructor, then the `draw()` method uses the limits of the supplied axes handle. If no axes handle is supplied, then the current axes is used with the same behavior as `gca()`.
 
@@ -31,6 +31,14 @@ The colors must be supplied as a 3-by-3 matrix whose rows are the RGB colors for
 #### `set_scaling_factor()`
 
 The scaling factor controls how far beyond the supplied minimum and maximum point the axes will extend. The scaling factor is a scalar numeric value which is multiplied by the extreme points.
+
+#### `use_axes_*_point()`
+
+Resets the minimum or maximum point to use the limits of the axes.
+
+#### `set_axes_*_point()`
+
+Sets the minimum or maximum point.
 
 # Examples
 
@@ -60,4 +68,4 @@ Same as above with custom colors and labels
 
 # Colorblind Safety
 
-Colorblindness safety was tested using [ColorHexa](https://www.colorhexa.com/). The three colors are close to [red](https://www.colorhexa.com/e63434) [yellow](https://www.colorhexa.com/f0c44f) and [green](https://www.colorhexa.com/4ad994). To compare, scroll down to the _Color Blindness Simulator_ header.
+Colorblindness safety of the default colors was tested using [ColorHexa](https://www.colorhexa.com/). The three default colors are close to [red](https://www.colorhexa.com/e63434), [yellow](https://www.colorhexa.com/f0c44f), and [green](https://www.colorhexa.com/4ad994). To compare, scroll down to the _Color Blindness Simulator_ header.
