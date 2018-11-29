@@ -1,4 +1,4 @@
-classdef (Sealed) PrettyAxes3D < handle & matlab.mixin.Copyable
+classdef PrettyAxes3D < handle & matlab.mixin.Copyable
     
     methods ( Access = public )
         
