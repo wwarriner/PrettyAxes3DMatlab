@@ -2,7 +2,7 @@
 
 Class for adding pretty axes to 3D MATLAB plots. When the `draw()` method of an instance is called, six axis lines are produced radiating from the supplied origin to the supplied minimum and maximum points, each parallel to the `XYZ` axes, colored independently. The default colors are colorblind safe; see below for more information. The end point of each axis is labeled by whether it is in the positive or negative direction, and by which axis it is parallel to. By default the labels are of the form `{-,+}{X,Y,Z}`. For example, the default positive `X`-axis is labeled `+X`, and negative `Z` is labeled `-Z`.
 
-`example 1 image here`
+![Example image of PrettyAxes3D](./example_1.png "Example PrettyAxes3D")
 
 # Usage
 
@@ -34,27 +34,27 @@ The scaling factor controls how far beyond the supplied minimum and maximum poin
 
 # Examples
 
-`ex1`
+![Typical usage image](./example_1.png "Typical usage")
 
 Typical usage
 
-`ex2`
+![No arguments image](./example_2.png "No arguments")
 
 No arguments
 
-`ex3`
+![Origin at max point image](./example_3.png "Origin at max point")
 
 Origin at max point
 
-`ex4`
+![Doubled scaling image](./example_4.png "Doubled scaling")
 
 Doubled scaling
 
-`ex5`
+![Automatic minimum and maximum with Peaks image](./example_5.png "Automatic minimum and maximum with Peaks")
 
 Automatic minimum and maximum with `Peaks`
 
-`ex6`
+![Same as above with custom colors and labels](./example_6.png "Same as above with custom colors and labels")
 
 Same as above with custom colors and labels
 
